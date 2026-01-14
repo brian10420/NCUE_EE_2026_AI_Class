@@ -582,7 +582,7 @@ model.print_trainable_parameters()`
                     </h2>
                     <p className="text-slate-600 mb-8">專案導向學習：從感知器網路到最先進的 LLM 微調技術</p>
                     
-                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 gap-12">
                         {modules.map((m) => (
                             <div key={m.id} className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden flex flex-col">
                                 <div className="p-4 border-b border-slate-100 bg-slate-50 flex justify-between items-center">
@@ -600,7 +600,7 @@ model.print_trainable_parameters()`
                                     {m.visual}
                                 </div>
                                 <div className="p-6 pt-2 flex-grow flex flex-col">
-                                    <p className="text-sm text-slate-600 mb-4 leading-relaxed h-12">{m.desc}</p>
+                                    <p className="text-sm text-slate-600 mb-4 leading-relaxed">{m.desc}</p>
                                     <div className="mb-4 flex flex-wrap gap-2">
                                         {Object.entries(m.params).map(([k, v]) => (
                                             <div key={k} className="text-[10px] bg-slate-100 text-slate-600 px-2 py-1 rounded border border-slate-200 font-mono">
